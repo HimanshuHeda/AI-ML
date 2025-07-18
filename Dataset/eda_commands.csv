@@ -1,0 +1,59 @@
+Category,Command,Purpose
+Data Loading,pd.read_csv('file.csv'),Load CSV file into a DataFrame
+Data Loading,pd.read_excel('file.xlsx'),Load Excel file
+Data Loading,pd.read_json('file.json'),Load JSON file
+Data Loading,df.to_csv('file.csv'),Save DataFrame to CSV
+Basic Info,df.head(),Show first 5 rows
+Basic Info,df.tail(),Show last 5 rows
+Basic Info,df.shape,"Get (rows, columns)"
+Basic Info,df.columns,List of column names
+Basic Info,df.index,Row index info
+Basic Info,df.info(),"Summary: columns, types, nulls"
+Basic Info,df.describe(),Statistical summary (numeric only)
+Basic Info,df.dtypes,Data types of each column
+Basic Info,df.memory_usage(),Memory usage of the DataFrame
+Data Preview,df.sample(n),Random sample of n rows
+Data Preview,df.iloc[i],Row access by position
+Data Preview,df.loc[index],Row access by label
+Missing Data,df.isnull(),Check for missing values
+Missing Data,df.isnull().sum(),Count of nulls per column
+Missing Data,df.dropna(),Remove rows with nulls
+Missing Data,df.fillna(value),Fill nulls with a value
+Uniqueness & Duplicates,df.duplicated(),Check for duplicates
+Uniqueness & Duplicates,df.drop_duplicates(),Drop duplicate rows
+Uniqueness & Duplicates,df.nunique(),Count of unique values per column
+Uniqueness & Duplicates,df['col'].unique(),Unique values in a column
+Value Counts,df['col'].value_counts(),Frequency of unique values
+Value Counts,df['col'].value_counts(normalize=True),Relative frequencies
+Aggregation,df.mean(),Average values
+Aggregation,df.median(),Median values
+Aggregation,df.min(),Minimum values
+Aggregation,df.max(),Maximum values
+Aggregation,df.mode(),Most frequent value
+Aggregation,df.std(),Standard deviation
+Aggregation,df.var(),Variance
+Grouping,df.groupby('col'),Group by column
+Grouping,".agg({'col1':'mean', 'col2':'sum'})",Aggregate with multiple functions
+Grouping,df.pivot_table(),Create pivot tables
+Sorting,df.sort_values('col'),Sort by column values
+Sorting,"df.sort_values(['col1', 'col2'])",Sort by multiple columns
+Correlation & Covariance,df.corr(),Pearson correlation matrix
+Correlation & Covariance,df.cov(),Covariance matrix
+Visualization,df.hist(),Histogram for numeric columns
+Visualization,df.boxplot(),Boxplot
+Visualization,df.plot(kind='bar'),Bar plot
+Visualization,df['col'].value_counts().plot.pie(),Pie chart
+Data Types,df.select_dtypes(include='number'),Select numeric columns
+Data Types,df.select_dtypes(include='object'),Select object (string) columns
+Filtering,df[df['col'] > 100],Filter by condition
+Filtering,df.query('col > 100'),Query with string condition
+Crosstab,"pd.crosstab(df['A'], df['B'])",Cross-tabulation (frequency table)
+Categorical Analysis,df['col'].value_counts(),Get value counts of categories
+Categorical Analysis,df['col'].value_counts(normalize=True),Proportion of categories
+Categorical Analysis,df['col'].nunique(),Number of unique categories
+Categorical Analysis,df['col'].mode(),Most common category
+Numerical Analysis,df.describe(),Summary stats for numeric columns
+Numerical Analysis,df['col'].skew(),Skewness of numeric column
+Numerical Analysis,df['col'].kurt(),Kurtosis of numeric column
+Numerical Analysis,df['col'].plot.hist(),Histogram of numeric column
+Numerical Analysis,df.boxplot(column='col'),Boxplot of numeric column
