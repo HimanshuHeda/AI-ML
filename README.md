@@ -51,7 +51,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 - Plots of predictions and data distributions
 
 ## Author
-- [Your Name]
+- Himanshu Heda
 
 ---
 This project is for educational purposes and demonstrates basic regression analysis and data visualization in Python.
